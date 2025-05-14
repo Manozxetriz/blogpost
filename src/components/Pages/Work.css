@@ -1,0 +1,140 @@
+    .showcase-container {
+            background-color: white;
+            border-radius: 20px;
+            height: 300px;
+            max-width: 1000px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+             margin: 50px auto;
+  width: 100%;
+  line-height: 26px;
+  text-align: center;
+        }
+        
+        .showcase-image {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .showcase-image img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        .showcase-content {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .showcase-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+      
+        
+        @media (max-width: 768px) {
+            .showcase-container {
+                flex-direction: column;
+                padding: 30px;
+            }
+            
+            .showcase-image, .showcase-content {
+                width: 100%;
+            }
+            
+            .showcase-image {
+                margin-bottom: 20px;
+            }
+        }
+.recent-works-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  text-align: center;
+  max-width: 280px;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+  .share-container {
+            position: fixed;
+            left: 315px;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+        
+        .share-text {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .share-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .share-button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .share-button:hover {
+            background-color: #e0e0e0;
+        }
+         @media (max-width: 768px) {
+            .share-container {
+                position: static;
+                margin-top: 50px;
+                margin-bottom: 20px;
+               padding-left: 100px;
+            }
+            
+            .share-buttons {
+                flex-direction: row;
+            }
+            
+           
+        }
