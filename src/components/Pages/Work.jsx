@@ -1,16 +1,10 @@
 import './Work.css';
 import image1 from '../../assets/1.jpeg'
 import image2 from '../../assets/2.jpeg'
-const projects = [
-  { title: 'Travel', image: image1 },
-  { title: 'Design', image: image2 },
-  { title: 'Freelance', image: image1 },
+import Card from '../Card/Card';
 
-];
 const Work= () => (
-
 <section>
-
   <hr className="section1-divider" />
   <h1 className="section1-header">
     <span className="text-black mr-2">•</span>
@@ -25,12 +19,28 @@ const Work= () => (
         </figure>
         <br/>
         <div className="portfolio-grid">
-          {projects.map((project, index) => (
-            <div className="portfolio-item" key={index}>
-              <img src={project.image} alt={project.title} className="portfolio-image" />
-            <div className="portfolio-title">{project.title}</div>
-            </div>
-          ))}
+      <Card
+        name="Design"
+      
+        title="Explore, learn, and stay up-to-date with the trends that are shaping the future.
+        "
+        
+        imageClass="bg-1"
+      />
+      <Card
+        name="Travel"
+       
+        title="Frontend Developer"
+      
+        imageClass="bg-2"
+      />
+      <Card
+        name="Hoobies"
+       
+        title="UX Researcher"
+       
+        imageClass="bg-3"
+      />
         </div>
           <div className="share-container">
       

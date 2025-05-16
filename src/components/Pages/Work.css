@@ -91,10 +91,10 @@
   transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
 }
-  .share-container {
+      .share-container {
             position: fixed;
-            left: 315px;
-            top: 60%;
+            left: 90px;
+            top: 50%;
             transform: translateY(-50%);
         }
         
@@ -138,3 +138,18 @@
             
            
         }
+.card .content {
+  padding: 30px;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  color: white;
+}
